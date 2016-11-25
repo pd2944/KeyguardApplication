@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">KeyguardApplication</string>
+    <string name="set_float_window">设置悬浮窗权限</string>
+    <string name="close_system_keyguard">关闭系统锁屏</string>
+    <string name="unlock_string">向上滑动解锁</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_float_window"
+        android:onClick="onClick"
+        android:layout_marginBottom="@dimen/main_bottom_margin"
+        android:text="@string/set_float_window"/>
+    <Button
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_system_keyguard"
+        android:onClick="onClick"
+        android:text="@string/close_system_keyguard"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="Keyguard_TimeTextView">60sp</dimen>
+    <dimen name="Keyguard_DateTextView">17sp</dimen>
+    <dimen name="Keyguard_DateRightMargin">5dip</dimen>
+    <dimen name="Keyguard_DateTopMargin">20dip</dimen>
+    <dimen name="Keyguard_Line">2dip</dimen>
+    <dimen name="main_button_width">150dip</dimen>
+    <dimen name="main_bottom_margin">20dip</dimen>
+    <dimen name="Keyguard_DateHeight">30dip</dimen>
+    <dimen name="Keyguard_TimeHeight">100dip</dimen>
+</resources>
