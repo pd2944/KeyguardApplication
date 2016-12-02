@@ -3,4 +3,13 @@
     <string name="set_float_window">设置悬浮窗权限</string>
     <string name="close_system_keyguard">关闭系统锁屏</string>
     <string name="unlock_string">向上滑动解锁</string>
+    <string name="set_num_password">设置四位数字密码</string>
+    <string name="set_pattern_password">设置图案密码</string>
+    <string name="set_picture">设置壁纸</string>
+    <string name="set_simple_password">设置简单四位密码</string>
+    <string name="centain_easy_password">再输入一次</string>
+    <string name="input_password">请输入四位密码</string>
+    <string name="password_try_again">请再试一次</string>
+    <string name="set_wallpaper_wite">设置锁屏壁纸,请稍等</string>
+    <string name="permission_notification">通知授权</string>
 </resources>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/lock_view_main"
-    android:orientation="vertical">
+    android:id="@+id/lock_view_main">
     <LinearLayout
         android:id="@+id/lock_view_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/Keyguard_DateTopMargin"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
         <TextClock
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,6 +21,7 @@
             android:format24Hour="H:mm"
             android:textSize="@dimen/Keyguard_TimeTextView"/>
         <LinearLayout
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -39,15 +40,16 @@
                 android:textSize="@dimen/Keyguard_DateTextView"/>
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout
+    <ListView
         android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:id="@+id/notification_listview"
+        android:layout_margin="@dimen/notification_main_listview_margin"/>
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_gravity="bottom">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/unlock_string"
-            android:layout_gravity="center_horizontal" />
-    </LinearLayout>
-</LinearLayout>
+        android:text="@string/unlock_string"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

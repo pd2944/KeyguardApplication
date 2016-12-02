@@ -7,6 +7,11 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by pengdi on 16-11-21.
@@ -16,19 +21,28 @@ public class LockView extends LinearLayout implements GestureDetector.OnGestureL
     private LockCallback mLockCallback;
     private Context mContext;
     private GestureDetector gestureDetector;
-    private LinearLayout lockViewMain;
+    private RelativeLayout lockViewMain;
     private LinearLayout lockViewTime;
+    private ListView lockNotificationListView;
+    private NotificationAdapter notificationAdapter;
+
     private static final float SCROLL_RATIO = 0.65f;// 阻尼系数
     private static final float MAX_SCROLL_HEIGHT = 300;// 最大的滑动距离
     private float nowY;
     private float alpha = 1;
+
     private String TAG = "LockViewTAG";
+
+    private List<NotificationAdapter.Notification> mList;
 
     public LockView(Context context, LockCallback lockCallback) {
         super(context);
         mContext = context;
         mLockCallback = lockCallback;
+        mList = new ArrayList<>();
+
         initView(context);
+
     }
 
     @Override
@@ -42,7 +56,12 @@ public class LockView extends LinearLayout implements GestureDetector.OnGestureL
         gestureDetector = new GestureDetector(this);
 
         lockViewTime = (LinearLayout) findViewById(R.id.lock_view_time);
-        lockViewMain = (LinearLayout) findViewById(R.id.lock_view_main);
+        lockViewMain = (RelativeLayout) findViewById(R.id.lock_view_main);
+        lockNotificationListView = (ListView) findViewById(R.id.notification_listview);
+
+        notificationAdapter = new NotificationAdapter(context,mList);
+        lockNotificationListView.setAdapter(notificationAdapter);
+
     }
 
     @Override

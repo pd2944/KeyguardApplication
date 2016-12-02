@@ -2,8 +2,8 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="Keyguard_TimeTextView">60sp</dimen>
-    <dimen name="Keyguard_DateTextView">17sp</dimen>
+    <dimen name="Keyguard_TimeTextView">65sp</dimen>
+    <dimen name="Keyguard_DateTextView">19sp</dimen>
     <dimen name="Keyguard_DateRightMargin">5dip</dimen>
     <dimen name="Keyguard_DateTopMargin">20dip</dimen>
     <dimen name="Keyguard_Line">2dip</dimen>
@@ -11,4 +11,16 @@
     <dimen name="main_bottom_margin">20dip</dimen>
     <dimen name="Keyguard_DateHeight">30dip</dimen>
     <dimen name="Keyguard_TimeHeight">100dip</dimen>
+    <dimen name="lock_easy_number">20sp</dimen>
+    <dimen name="lock_password_layout_height">50dip</dimen>
+    <dimen name="lock_password">5dip</dimen>
+    <dimen name="notification_item">70dip</dimen>
+    <dimen name="notification_icon">70dip</dimen>
+    <dimen name="notification_title_height">40dip</dimen>
+    <dimen name="notification_title_width">200dip</dimen>
+    <dimen name="notification_content_width">200dip</dimen>
+    <dimen name="notification_content_height">30dip</dimen>
+    <dimen name="notification_time_width">50dip</dimen>
+    <dimen name="notification_time_height">40dip</dimen>
+    <dimen name="notification_main_listview_margin">20dip</dimen>
 </resources>

@@ -19,5 +19,33 @@
         android:layout_height="wrap_content"
         android:id="@+id/close_system_keyguard"
         android:onClick="onClick"
+        android:layout_marginBottom="@dimen/main_bottom_margin"
         android:text="@string/close_system_keyguard"/>
+    <Button
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/permission_notification"
+        android:onClick="onClick"
+        android:layout_marginBottom="@dimen/main_bottom_margin"
+        android:text="@string/permission_notification"/>
+    <Button
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_picture"
+        android:onClick="onClick"
+        android:layout_marginBottom="@dimen/main_bottom_margin"
+        android:text="@string/set_picture" />
+    <Button
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_num_password"
+        android:onClick="onClick"
+        android:layout_marginBottom="@dimen/main_bottom_margin"
+        android:text="@string/set_num_password" />
+    <Button
+        android:layout_width="@dimen/main_button_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_pattern_password"
+        android:onClick="onClick"
+        android:text="@string/set_pattern_password" />
 </LinearLayout>

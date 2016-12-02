@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/lock_background"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/notification_item">
+    <ImageView
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="@dimen/notification_icon"
+        android:layout_height="match_parent"
+        android:id="@+id/notification_icon" />
+    <TextView
+        android:layout_width="@dimen/notification_title_width"
+        android:layout_height="@dimen/notification_title_height"
+        android:text="标题标题标题标题!!!"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/notification_title" />
+    <TextView
+        android:layout_width="@dimen/notification_content_width"
+        android:layout_height="@dimen/notification_content_height"
+        android:layout_alignParentBottom="true"
+        android:text="内容内容内容!!!"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:id="@+id/notification_content"
+        android:layout_alignStart="@+id/notification_title" />
+    <TextView
+        android:layout_width="@dimen/notification_time_width"
+        android:layout_height="@dimen/notification_time_height"
+        android:text="12:20"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:id="@+id/notification_time"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
